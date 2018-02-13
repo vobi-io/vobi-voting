@@ -23,7 +23,6 @@ Make project
 mkdir ebay_dapp
 cd ebay_dapp
 truffle unbox webpack
-rm contracts/ConvertLib.sol contracts/MetaCoin.sol
 ```
  
 Run Test mode
@@ -31,11 +30,18 @@ Run Test mode
 
 ```shell
 node_modules/.bin/ganache-cli
-
-truffle exec seed.js   run .js file by truffle
 truffle console
 ```
 
+Deploy contract
+-----------
+```shell
+node_modules/.bin/ganache-cli
+
+truffle migrate
+
+truffle exec seed.js
+```
 
 
 Our [Git Flow](https://github.com/vobi-io/vobi-voting/blob/master/README.md)

@@ -46,6 +46,7 @@
     "web3": "^0.20.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0",
-    "ganache-cli": "^6.0.3"
+    "ganache-cli": "^6.0.3",
+    "ethereumjs-util": "5.1.2"
   }
 }
