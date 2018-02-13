@@ -43,6 +43,18 @@ truffle migrate
 truffle exec seed.js
 ```
 
+Example deploy
+-----------
+```shell
+truffle console
+
+current_time = Math.round(new Date() / 1000);
+
+Voting.deployed().then(function (i) { i.registerVoting('Who will be mayor of Tbilisi ?', '_descLink', 'Category', current_time, current_time + 200, ['Kakha', 'Zaali']).then(function (f) { console.log(f) }) })
+
+truffle(development)>  Voting.deployed().then(function(i) {i.getVoting.call(1).then(function(f) {console.log(f)})})
+```
+
 
 Our [Git Flow](https://github.com/vobi-io/vobi-voting/blob/master/README.md)
 --------------------------------------
