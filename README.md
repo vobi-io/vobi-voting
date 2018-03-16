@@ -20,8 +20,8 @@ Make project
 -----------
 
 ```shell
-mkdir ebay_dapp
-cd ebay_dapp
+mkdir vobi-voting
+cd vobi-voting
 truffle unbox webpack
 ```
  
